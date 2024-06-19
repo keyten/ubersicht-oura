@@ -5,7 +5,7 @@ You will need to sync the oura ring with your app every day, so that Oura cloud 
 
 <img width="903" alt="image" src="https://github.com/keyten/ubersicht-oura/assets/1017222/2c4c7502-cf86-4768-8255-e6b9a7692a1d">
 
-#### Installation
+# Installation
 1. Put oura.jsx to the widgets directory.
 2. Open https://cloud.ouraring.com/ and login.
 3. Open developer console and find cookie in the very first request.
