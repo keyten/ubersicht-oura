@@ -33,6 +33,9 @@ const hour = 60 * minute;
 export const refreshFrequency = 2 * hour;
 
 export const command = async () => {
+  if (OURA_USER_COOKIE === 'YOUR_COOKIE_VALUE') {
+    return {};
+  }
   return await api.getOuraDailyData();
 };
 
@@ -68,6 +71,9 @@ export const className =`
 `;
 
 export const render = ({ output, error }) => {
+  if (OURA_USER_COOKIE === 'YOUR_COOKIE_VALUE') {
+    return <div>You need to set the cookie value first. Check the <a href="https://github.com/keyten/ubersicht-oura/blob/main/README.md#installation" target="_blank">installation manual</a>.</div>
+  }
   if (error) {
     return <div>Error: {error}</div>;
   }
